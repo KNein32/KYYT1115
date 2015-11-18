@@ -16,6 +16,7 @@ class CreateUserTable extends Migration
             $table->increments('id');
 						$table->string('name')->unique;
 						$table->string('password');
+						$table->integer('groupId')->references('id')->on('groups');
             $table->timestamps();
         });
     }
