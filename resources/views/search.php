@@ -1,30 +1,35 @@
 <html>
     <body>
-    	<table>
-    		<tr>
-    			<td>Rank</td>
-    			<td>Domain</td>
-    		</tr>
-	    	<?php
-	       if(!empty($domains)) {
-	       	foreach ($domains as $domain) {
+    	<?php
+       if(count($domains)) 
+			 {
+			 ?>
+	    	<table>
+	    		<tr>
+	    			<td>Rank</td>
+	    			<td>Domain</td>
+	    		</tr>
+		    	<?php
+		       	foreach ($domains as $domain) {
 						?>
-	       		<tr>
-	       			<td>
-	       				<?php echo $domain->rank; ?>
-	       			</td>
-	       			<td>
-	       				<?php echo $domain->name; ?>
-	       			</td>
-	       		</tr>
+		       		<tr>
+		       			<td>
+		       				<?php echo $domain->rank; ?>
+		       			</td>
+		       			<td>
+		       				<?php echo $domain->name; ?>
+		       			</td>
+		       		</tr>
 	       		<?php 
-					 }
-	       }
-				 else {
-				 	echo "No domain found";
-				 }
-	      ?>
-    	</table>
+						}
+		      ?>
+	    	</table>
+    	<?php	 
+  	  }
+			else {
+				echo "No domain found";
+			}
+			?>
     </body>
 </html>
 <style>

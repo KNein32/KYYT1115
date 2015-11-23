@@ -22,7 +22,7 @@ class user extends Controller
 		public function search(Request $request)
 		{
 			$search = $request->input('domain');
-			$searchArray = preg_split('/\\n/', $search);
+			$searchArray = preg_split('/\\r\\n/', $search);
 
 			$domains = domain::whereIn('name', $searchArray)
 				->get();
