@@ -4,7 +4,7 @@ namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
 
-class AlexaCommand extends Command
+class AlexaImport extends Command
 {
     /**
      * The name and signature of the console command.
