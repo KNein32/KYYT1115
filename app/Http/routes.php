@@ -21,4 +21,4 @@ Route::get('user/search', 'user@search');
 
 Route::get('admin', 'admin@index');
 
-Route::post('admin/add', 'admin@add');
+Route::get('admin/add', 'admin@add');

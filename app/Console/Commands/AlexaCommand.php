@@ -40,7 +40,7 @@ class AlexaCommand extends Command
       //As far as I can see you can either sign up for to alexa via AWS. Pay 25C per 100 sites.
       //So $1.25 for 500. Don't mind doing a few time but would rather not be charged. 
       //or download a free csv via this link // http://s3.amazonaws.com/alexa-static/top-1m.csv.zip
-      //Can probably use something like Laravel Excel v2.0 or Laravel.IO to help with the second but i don't think i'll get to it.
+      //Can probably use something like Laravel Excel v2.0 to help with the second but i don't think i'll get to it.
       //Either way don't think I have time today to write the code so I did an import using navicat db import tool
     }
 }
