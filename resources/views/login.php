@@ -1,6 +1,6 @@
 <html>
     <body>
-       <form>
+       <form action='/validate'>
 			  User Name:<br>
 			  <input type="text" name="name">
 			  <br>

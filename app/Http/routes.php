@@ -13,6 +13,8 @@
 
 Route::get('/', 'login@index');
 
+Route::get('validate', 'login@user');
+
 Route::get('user', 'user@index');
 
 Route::get('user/result', 'user@result');
