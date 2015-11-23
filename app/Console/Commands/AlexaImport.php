@@ -4,6 +4,9 @@ namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
 
+/**
+ * Will imporst the top 500 domains into the local database.
+ */
 class AlexaImport extends Command
 {
     /**

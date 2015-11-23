@@ -1,10 +1,10 @@
 <html>
     <body>
        <form action='admin/add'>
-        name:<br>
+        Domain:<br>
         <input type="text" name="name">
         <br>
-        rank:
+        Rank:
         <br>
         <input type="number" name="rank">
         <br>

@@ -6,6 +6,9 @@ use App\Http\Controllers\Controller;
 use App\domain;
 use Illuminate\Http\Request;
 
+/**
+ * Handles admin pages.
+ */
 class admin extends Controller
 {
     /**

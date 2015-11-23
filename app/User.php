@@ -4,6 +4,9 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * Responsable for userdata and their actions.
+ */
 class User extends Model
 {
 	/**

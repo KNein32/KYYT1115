@@ -7,6 +7,9 @@ use App\User;
 use App\Group;
 use Illuminate\Http\Request;
 
+/**
+ * Handles loggin pages.
+ */
 class login extends Controller
 {
     /**
@@ -36,14 +39,8 @@ class login extends Controller
 						->withErrors('Failed to validate user name or password');
 			}
 			
-			$group = Group::where('id', $user->groupId)
-					->first();
+			$group = Group::getUserGroup($user);
 			
-			if(empty($group)) {
-				return redirect('/')
-					->withErrors('Failed to find group for user');
-			}
-			
-			return redirect($group->name);
+			return redirect($group);
 		}
 }
