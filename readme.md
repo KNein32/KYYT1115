@@ -1,7 +1,7 @@
 Programing test done for Yahi
 
 Task not done.
-Create command to pull 500 global sites from Alexa. Stuff file and function are in place with comments describing what has to be done.
+Create command to pull 500 global sites from Alexa. Stuff file and function are in place with comments describing some diffrent way of doing it.
 //Currently testing file with imported csv file
 
 Potential Improvement.
