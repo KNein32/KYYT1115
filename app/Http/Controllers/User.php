@@ -13,7 +13,7 @@ class user extends Controller
 		*/
     public function index()
     {
-      return view('user');
+      return view('user/index');
     }
 		
 		/**
@@ -27,6 +27,6 @@ class user extends Controller
 			$domains = domain::whereIn('name', $searchArray)
 				->get();
 
-			return view('search', ['domains' => $domains]);
+			return view('user/search', ['domains' => $domains]);
 		}
 }
