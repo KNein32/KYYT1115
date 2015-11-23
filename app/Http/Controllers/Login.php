@@ -21,17 +21,17 @@ class login extends Controller
 		 * Log in check.
 		 * Password should be encrypted and validation should be done in the model.
 		 * Should use select to get the columns you are interested in.
+		 * 
+		 * @param Request
 		 */
 		public function user(Request $request)
 		{
 			$name = $request->input('name');
 			$password = $request->input('password');
 			
-			$user = User::where('name', $name)
-					->where('password', $password)
-					->first();
+			$user = User::validate($name, $password);
 			
-			if(empty($user)) {
+			if(!$user) {
 				return redirect('/')
 						->withErrors('Failed to validate user name or password');
 			}

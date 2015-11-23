@@ -18,6 +18,7 @@ class admin extends Controller
 		
 		/**
 		 * Search for user domains.
+		 * @param Request
 		 */
 		public function add(Request $request)
 		{
