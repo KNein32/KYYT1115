@@ -14,3 +14,11 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('user', 'user@index');
+
+Route::get('user/result', 'user@result');
+
+Route::get('admin', 'admin@index');
+
+Route::post('admin/result', 'admin@result');
