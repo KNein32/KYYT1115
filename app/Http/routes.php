@@ -17,7 +17,7 @@ Route::get('validate', 'login@user');
 
 Route::get('user', 'user@index');
 
-Route::get('user/result', 'user@result');
+Route::get('user/search', 'user@search');
 
 Route::get('admin', 'admin@index');
 

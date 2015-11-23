@@ -17,6 +17,11 @@ class login extends Controller
         return view('login');
     }
 		
+		/**
+		 * Log in check.
+		 * Password should be encrypted and validation should be done in the model.
+		 * Should use select to get the columns you are interested in.
+		 */
 		public function user(Request $request)
 		{
 			$name = $request->input('name');
